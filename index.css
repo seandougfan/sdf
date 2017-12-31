@@ -5,7 +5,7 @@ body, html {
 
 .bgimg {
     /* Background image */
-    background-image: url=('kilimanjaro.jpg');
+    background-image: url=('https://www.rei.com/adventures/assets/adventures/images/trip/core/africa/kil_hero');
     /* Full-screen */
     height: 100%;
     /* Center the background image */
