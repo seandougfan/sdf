@@ -40,7 +40,6 @@ body, html {
 /* Position text in the bottom-middle */
 .bottommiddle {
     position: absolute;
-    top: 70%
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
