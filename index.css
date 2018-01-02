@@ -44,6 +44,11 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color: white;
+    /* Add a font */
+    font-family: "Courier New", Courier, monospace;
+    /* Set the font-size to 25 pixels */
+    font-size: 10px;
 }
 
 /* Position text in the middle */
