@@ -25,8 +25,8 @@
 
 function handleQueryResponse(response) {
   var data = response.getDataTable();
-  var chart = new google.visualization.ColumnChart(document.getElementById('columnchart'));
-  chart.draw(data, null);
+  var chart = new google.visualization.Table(document.getElementById('table_div'));
+  table.draw(data, null);
 }
     </script>
    
