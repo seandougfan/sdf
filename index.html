@@ -12,30 +12,11 @@
 
   gtag('config', 'UA-111817112-1');
 </script>
-<!-- new test for table on the site -->
-   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['table']});
-      google.charts.setOnLoadCallback(drawTable);
-
-      function drawTable() {
-     var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1U-DE9H210moebnb6HdmXFFsUwbIHppg-N3q7AGVDE9M/edit#gid=0');
-  query.send(handleQueryResponse);
-}
-
-function handleQueryResponse(response) {
-  var data = response.getDataTable();
-  var chart = new google.visualization.Table(document.getElementById('table_div'));
-  chart.draw(data, null);
-}
-    </script>
    
 </head>
 
 <div class="bgimg">
   <div class="middle">
-     <!-- new div for a test of the table -->
-     <div id="table_div"></div>
     <h1>Coming Soon</h1>
     <hr>
     <p><a href="https://www.instagram.com/seandougfan/"><font color="FFFFFF">Life</font></a>, <a href="https://www.strava.com/athletes/4240083"><font color="FFFFFF">Training</font></a>, and More</p>
