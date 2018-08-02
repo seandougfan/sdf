@@ -19,21 +19,15 @@
       google.charts.setOnLoadCallback(drawTable);
 
       function drawTable() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Name');
-        data.addColumn('number', 'Salary');
-        data.addColumn('boolean', 'Full Time Employee');
-        data.addRows([
-          ['This',  {v: 10000, f: '$10,000'}, true],
-          ['Is',   {v:8000,   f: '$8,000'},  false],
-          ['A', {v: 12500, f: '$12,500'}, true],
-          ['Test',   {v: 7000,  f: '$7,000'},  true]
-        ]);
+     var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1U-DE9H210moebnb6HdmXFFsUwbIHppg-N3q7AGVDE9M/edit#gid=0');
+  query.send(handleQueryResponse);
+}
 
-        var table = new google.visualization.Table(document.getElementById('table_div'));
-
-        table.draw(data, {showRowNumber: false, width: '100%', height: '100%'});
-      }
+function handleQueryResponse(response) {
+  var data = response.getDataTable();
+  var chart = new google.visualization.ColumnChart(document.getElementById('columnchart'));
+  chart.draw(data, null);
+}
     </script>
    
 </head>
