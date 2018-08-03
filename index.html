@@ -16,33 +16,28 @@
    <!-- new data for PLG test -->
    
    <style>
+      
       #page {
     margin: 25px;
 }
 
-
-th,td{font-weight:500;}
+th,td {
+      font-weight:inherit;
+}
  
-td,th{padding:0 4px;vertical-align:middle;}
+table thead th,table thead td,table.google-visualization-table thead th,table.google-visualization-table thead td {
+      font-weight:bold; 
+      font-size:inherit;
+}
 
-table thead tr:first-child,table thead tr.headerRowStyle,table.google-visualization-table 
-thead tr:first-child,table.google-visualization-table thead tr.headerRowStyle{background:#004792;color:#FFF;}table thead tr:first-child a,table thead tr.headerRowStyle a,table.google-visualization-table thead tr:first-child a,table.google-visualization-table thead tr.headerRowStyle a{color:#FFF;}
+.google-visualization-table-table th, .google-visualization-table-table td {
+      border:none !important; 
+      width: 40px;
+}
 
-table thead th,table thead td,table.google-visualization-table thead th,table.google-visualization-table thead td{font-weight:bold;}
-
-.google-visualization-table > div:first-child{border:none !important;}
-
-.google-visualization-table-table{font-family:inherit !important;font-size:inherit !important;}.google-visualization-table-table th,.google-visualization-table-table td{border:none !important; width: 40px;}
-
-.google-visualization-table .gradient{background:none !important;background-image:none !important;border:none !important;}
-
-#tblMarketComps tbody tr td{text-align:right !important;} 
-
-#tblMarketComps tbody tr td:first-child{text-align:left !important;}
-em{font-style:italic;}
-*/
-
-.google-visualization-table-table td{border:none !important; width: 40px;}
+.google-visualization-table-table td {
+      border:inherit !important;
+}
 
 .cssHeaderRow {
       background-color: #003c82;
@@ -56,15 +51,16 @@ em{font-style:italic;}
       background-color: #F0F1F2;
       font-family: Arial;
       text-align: right;
-      height: 15px;
+      height: 25px;
             }
 
 .cssOddTableRow {
       background-color: #ffffff;
       font-family: Arial;
       text-align: right;
-      height: 15px;
+      height: 25px;
             }
+
  .cssSelectedTableRow {
       font-family: Arial;
       font-weight:bold;
@@ -85,12 +81,17 @@ tr.cssTableRow td:first-of-type, tr.cssOddTableRow td:first-of-type, tr.cssHeade
 
 tr.cssTableRow:last-of-type {
       font-weight: bold;
-      background: #DCDCDC
+      background: #DCDCDC;
+      border-top-style: solid;
+      border-bottom-style: solid;
+      border-width: 1px;
+      border-color: #000000;
 }
       
    </style>
+   
    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
+   <script type="text/javascript">
       google.charts.load('current', {'packages':['table']});
       google.charts.setOnLoadCallback(drawTable);
 
@@ -112,10 +113,8 @@ tr.cssTableRow:last-of-type {
       
       function handleQueryResponse(response) {
         var data = response.getDataTable();
-          data.setProperty(0,0,'style','width:50px');
         var ovplgindex = new google.visualization.Table(document.getElementById('table_div'));
-        
-        ovplgindex.draw(data, {allowhtml: true, showRowNumber: false, width: '100%', height: '100%', cssClassNames:cssClassNames, sort: 'disable'});
+        ovplgindex.draw(data, {allowhtml: true, showRowNumber: false, width: '80%', height: '100%', cssClassNames:cssClassNames, sort: 'disable'});
 }
       
     </script>
@@ -130,10 +129,9 @@ tr.cssTableRow:last-of-type {
     <hr>
     <p><a href="https://www.instagram.com/seandougfan/"><font color="FFFFFF">Life</font></a>, <a href="https://www.strava.com/athletes/4240083"><font color="FFFFFF">Training</font></a>, and More</p>
   </div>
-</div>
-
-    <div id="page">
+     <div id="page">
     <div id="table_div">
+</div>
     </div>
     </div>
 
