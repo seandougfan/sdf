@@ -1,0 +1,123 @@
+<html>
+  <head>
+ <style>
+    #page {
+    margin: 25px;
+}
+
+th,td {
+      font-weight:inherit;
+}
+
+#table_div {
+  max-width: 1000px;
+}
+
+table thead th,table thead td,table.google-visualization-table thead th,table.google-visualization-table thead td {
+      font-weight:bold; 
+      font-size:inherit;
+}
+
+.google-visualization-table-table th, .google-visualization-table-table td {
+      border:none !important; 
+      width: 40px;
+}
+
+.google-visualization-table-table td {
+      border:inherit !important;
+}
+
+.cssHeaderRow {
+      background-color: #003c82;
+      color: #ffffff;
+      font-family: Arial;
+      text-align: right;
+      height: 25px;
+            }
+
+.cssTableRow {
+      background-color: #F0F1F2;
+      font-family: Arial;
+      text-align: right;
+      height: 10px;
+            }
+
+.cssOddTableRow {
+      background-color: #ffffff;
+      font-family: Arial;
+      text-align: right;
+      height: 10px;
+            }
+
+ .cssSelectedTableRow {
+      font-family: Arial;
+      font-weight:bold;
+}
+
+.cssHeaderColumn {
+      text-align: left;
+      
+}
+
+ .cssHoverTableRow {
+      background: rgb(165,165,165);
+}
+
+tr.cssTableRow td:first-of-type, tr.cssOddTableRow td:first-of-type, tr.cssHeaderRow th:first-of-type {
+      text-align: left;
+}
+
+tr.cssTableRow:last-of-type {
+      font-weight: bold;
+      background: #DCDCDC;
+      border-top-style: solid;
+      border-bottom-style: solid;
+      border-width: 1px;
+      border-color: #000000;
+}
+
+th.cssHeaderCell {
+  width: 12.5%;
+}
+   
+ 
+ </style>
+ 
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+      function drawTable() {
+        var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1U-DE9H210moebnb6HdmXFFsUwbIHppg-N3q7AGVDE9M/edit#gid=0');
+        query.send(handleQueryResponse);
+        
+}
+        var cssClassNames = {
+          'headerRow': 'cssHeaderRow',
+          'tableRow': 'cssTableRow',
+          'oddTableRow': 'cssOddTableRow',
+          'selectedTableRow': 'cssSelectedTableRow',
+          'hoverTableRow': 'cssHoverTableRow',
+          'headerCell': 'cssHeaderCell',
+          'tableCell': 'cssTableCell',
+          'rowNumberCell': 'cssRowNumberCell'
+                };
+      
+      function handleQueryResponse(response) {
+        var data = response.getDataTable();
+        var ovplgindex = new google.visualization.Table(document.getElementById('table_div'));
+        ovplgindex.draw(data, {allowhtml: true, showRowNumber: false, width: '100%', height: '100%', cssClassNames:cssClassNames, sort: 'disable'});
+}
+      
+    </script>
+  </head>
+  <body>
+    <div id="page">
+      <div id="table_div">
+      </div>
+    </div>
+  </body>
+
+</html>
