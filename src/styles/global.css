@@ -32,3 +32,8 @@ footer span{color:#7b9072}
 .personal-home .opening{font-size:16px;line-height:1.85;letter-spacing:-.15px;color:#596257;max-width:570px;margin:0}.personal-home+.home-section{margin-top:42px}@media(max-width:540px){.personal-home .opening{font-size:16px;line-height:1.85}}
 
 .question-note{display:block;width:fit-content;font-size:11px;margin-top:4px;color:#66845b!important;text-decoration:none!important}.question-note:hover{text-decoration:underline!important}.writing-item{display:block;padding:15px 0;border-bottom:1px solid var(--line)}.writing-item:hover{text-decoration:none}.writing-title{display:flex;justify-content:space-between;gap:20px;font-size:14px;color:#245337}.writing-title>span{color:#6c8264}.writing-description{display:block;font-size:12px;color:#788670;line-height:1.7;margin-top:5px}.writing-item:hover .writing-title{text-decoration:underline;text-underline-offset:4px}.prose h1{font-size:35px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;line-height:1.15;letter-spacing:-.6px;margin:20px 0 27px}.prose .page-label{margin-bottom:0}.prose p,.prose li{font-size:15px;line-height:1.85}.prose li{margin-bottom:10px}.note-contact{border-top:1px solid var(--line);padding-top:20px;margin-top:32px}.home-section>.inline-link{display:inline-block;margin-top:5px;font-size:12px}@media(max-width:540px){.prose h1{font-size:31px}}
+
+/* Avoid short last lines without fixing breaks to one viewport. */
+.opening,.skim-list li,.writing-description,.prose p,.prose li{ text-wrap:pretty; }
+h1,h2,.writing-title{ text-wrap:balance; }
+.personal-home .opening,.home-section .skim-list li{ text-wrap:balance; }
