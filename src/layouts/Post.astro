@@ -2,4 +2,4 @@
 import Layout from './Layout.astro';
 const { frontmatter } = Astro.props;
 ---
-<Layout title={`${frontmatter.title} — Sean Fanning`} description={frontmatter.description}><article class="prose"><a class="inline-link" href="/thoughts">← All thoughts</a><div class="page-label">{frontmatter.date}</div><h1>{frontmatter.title}</h1><slot/></article></Layout>
+<Layout title={`${frontmatter.title} — Sean Fanning`} description={frontmatter.description}><article class="prose"><a class="inline-link" href="/thoughts">← All thoughts</a><div class="page-label">{frontmatter.status && <span>{frontmatter.status} · </span>}{frontmatter.date}</div><h1>{frontmatter.title}</h1><slot/><p class="note-contact"><a class="inline-link" href="mailto:s@sdf.tech">Send a thought or counterexample ↗</a></p></article></Layout>

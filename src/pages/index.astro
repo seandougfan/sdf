@@ -19,17 +19,28 @@ import questions from '../data/questions.json';
     <p class="background-note">Across product, go-to-market, fundraising, and corporate development. B2B and consumer; mostly vertical software.</p>
   </section>
 
+  <section id="conversation" class="home-section narrative">
+    <h2>Talk to me about</h2>
+    <ul class="skim-list">
+      <li>You have early customers getting value, but haven’t found a repeatable way to reach more.</li>
+      <li>You own a vertical software business and are working through what AI changes about its product, economics, or opportunity.</li>
+      <li>You’re exploring an unusual ownership or capital structure, particularly where data, software, and operating businesses meet.</li>
+    </ul>
+    <a class="inline-link" href="mailto:s@sdf.tech">Let’s compare notes ↗</a>
+  </section>
+
   <section id="questions" class="home-section narrative">
     <h2>Questions I keep coming back to</h2>
     <ul class="skim-list question-list">
-      {questions.map(({ topic, question }) => <li><strong>{topic}{/[.!?]$/.test(topic) ? '' : '.'}</strong> {question}</li>)}
+      {questions.map(({ topic, question, href }) => <li><strong>{topic}{/[.!?]$/.test(topic) ? '' : '.'}</strong> {question}{href && <a class="question-note" href={href}>Working note ↗</a>}</li>)}
     </ul>
   </section>
 
   <section id="writing" class="home-section">
-    <h2>Writing</h2>
-    <a class="entry" href="https://seanfanning.substack.com" target="_blank" rel="noreferrer"><span>Capital Markets Roundup</span><span>Substack <i>↗</i></span></a>
-    <p class="aside">My archive of writing on markets and companies.</p>
+    <h2>Selected writing</h2>
+    <a class="writing-item" href="https://seanfanning.substack.com" target="_blank" rel="noreferrer"><span class="writing-title">Capital Markets Roundup <span>↗</span></span><span class="writing-description">My archive of writing on markets and companies.</span></a>
+    <a class="writing-item" href="https://www.racepace.cc/blog/leadville-100-training" target="_blank" rel="noreferrer"><span class="writing-title">My Leadville 100 Training <span>↗</span></span><span class="writing-description">Structure, consistency, and the preparation behind a long day on the bike.</span></a>
+    <a class="writing-item" href="https://www.racepace.cc/blog/my-leadville-100-fueling-strategy" target="_blank" rel="noreferrer"><span class="writing-title">My Leadville 100 Fueling Strategy <span>↗</span></span><span class="writing-description">The plan, the constraints, and what actually happened on race day.</span></a>
   </section>
 
   <section class="home-section narrative personal-section">

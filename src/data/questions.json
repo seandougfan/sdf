@@ -1,7 +1,8 @@
 [
   {
     "topic": "Data as float",
-    "question": "Can a data business fund a permanent capital vehicle whose ambitions outlast the original business?"
+    "question": "Can a data business fund a permanent capital vehicle whose ambitions outlast the original business?",
+    "href": "/thoughts/data-and-permanent-capital"
   },
   {
     "topic": "Learning from real-world work",
@@ -9,7 +10,8 @@
   },
   {
     "topic": "Who captures AI’s value?",
-    "question": "Does AI strengthen existing software businesses—or route around them? Where do customer value and durable profits accumulate?"
+    "question": "Does AI strengthen existing software businesses—or route around them? Where do customer value and durable profits accumulate?",
+    "href": "/thoughts/from-software-to-operations"
   },
   {
     "topic": "Distribution when agents do the buying",
