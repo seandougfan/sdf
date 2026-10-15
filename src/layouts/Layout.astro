@@ -1,0 +1,11 @@
+---
+import '../styles/global.css';
+const { title = 'Sean Fanning', description = 'Sean Fanning. Partner at Merit Holdings. Previously founded Racepace. Cyclist.' } = Astro.props;
+const path = Astro.url.pathname;
+
+---
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={description}/><title>{title}</title><link rel="icon" href="/favicon.svg"/></head><body><div class="site">
+<header><a class="site-name" href="/">Sean Fanning<span aria-hidden="true">.</span></a><nav aria-label="Main navigation"><a href="/#work">Work</a><a href="/#writing">Writing</a><a href="mailto:s@sdf.tech">Contact ↗</a></nav></header>
+<main><slot/></main>
+<footer><a href="mailto:s@sdf.tech">Say hello ↗</a><a href="https://www.strava.com/athletes/4240083" target="_blank" rel="noreferrer">Strava ↗</a><span>sdf.tech</span></footer>
+</div></body></html>
