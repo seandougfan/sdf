@@ -38,3 +38,7 @@ The Thoughts index lists posts automatically. The original HTML/CSS and images r
 ## Publishing
 
 GitHub Actions builds Astro and deploys `dist/` to GitHub Pages on each push to `master`. The custom domain remains `sdf.tech`. The homepage is a single page; `/thoughts/` and Markdown article routes remain available for expanding the archive.
+
+## Updating questions
+
+Edit `src/data/questions.json`. Each entry has a `topic` and `question`; the homepage renders them as a semantic bullet list.

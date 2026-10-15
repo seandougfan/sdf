@@ -1,27 +1,32 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import questions from '../data/questions.json';
 ---
 <Layout>
   <section class="personal-home">
     <h1>I invest in software.<br/>I’ve built it, too.</h1>
     <div class="home-bio">
-      <p>I’m Sean, a partner at <a href="https://www.meritholdings.com/" target="_blank" rel="noreferrer">Merit Holdings</a>. I’ve spent the last decade and a half building and investing in companies, from the earliest stages through growth.</p>
-      <p>I’ve worked with teams at the “two people and a deck” stage, and with companies whose products are already delivering value but need to figure out how to reach more customers.</p>
+      <p>I’m Sean. I’ve spent the last decade and a half building and investing in software companies, from inception through growth. Today, I’m a partner at <a href="https://www.meritholdings.com/" target="_blank" rel="noreferrer">Merit Holdings</a>.</p>
     </div>
   </section>
 
   <section id="work" class="home-section narrative">
     <h2>Work & background</h2>
-    <p>At <a href="https://www.meritholdings.com/" target="_blank" rel="noreferrer">Merit</a>, we acquire, operate, and build vertical software businesses with a long-term ownership horizon.</p>
-    <p>Before Merit, I helped build <strong>Dispatch</strong> in field services, worked in growth investing at <strong>OpenView</strong> across Series A, Series B, and later stages, and invested at <strong>Pathlight Ventures</strong> from inception and pre-seed through early Series A.</p>
-    <p>That work has spanned fundraising, corporate development, early-stage and growth investing, and company building from both a product and go-to-market perspective. Mostly vertical software, across B2B and consumer.</p>
-    <p>I also previously founded <a href="https://www.racepace.cc/" target="_blank" rel="noreferrer">Racepace</a>, an AI cycling coach that brings training history and day-to-day conversation together to help athletes plan, adapt, and improve.</p>
+    <ul class="skim-list work-list">
+      <li><a href="https://www.meritholdings.com/" target="_blank" rel="noreferrer">Merit Holdings</a> <span>— Partner. Long-term ownership of vertical software businesses.</span></li>
+      <li><a href="https://www.racepace.cc/" target="_blank" rel="noreferrer">Racepace</a> <span>— Previously founded. AI cycling coaching.</span></li>
+      <li><a href="https://pathlight.vc/" target="_blank" rel="noreferrer">Pathlight Ventures</a> <span>— Inception and pre-seed through early Series A.</span></li>
+      <li><a href="https://openviewpartners.com/" target="_blank" rel="noreferrer">OpenView</a> <span>— Growth investing. Series A, Series B, and beyond.</span></li>
+      <li><a href="https://dispatch.me/" target="_blank" rel="noreferrer">Dispatch</a> <span>— Company building in field services software.</span></li>
+    </ul>
+    <p class="background-note">Across product, go-to-market, fundraising, and corporate development. B2B and consumer; mostly vertical software.</p>
   </section>
 
-  <section class="home-section narrative">
+  <section id="questions" class="home-section narrative">
     <h2>Questions I keep coming back to</h2>
-    <p>What makes a software business defensible? How does value delivered to customers become lasting equity value? And how do product, distribution, and capital allocation reinforce one another?</p>
-    <p>I’m interested in what actually makes a business more valuable over time: its economics, competitive position, and ability to keep serving customers well.</p>
+    <ul class="skim-list question-list">
+      {questions.map(({ topic, question }) => <li><strong>{topic}.</strong> {question}</li>)}
+    </ul>
   </section>
 
   <section id="writing" class="home-section">
@@ -32,11 +37,9 @@ import Layout from '../layouts/Layout.astro';
 
   <section class="home-section narrative personal-section">
     <h2>Outside work</h2>
-    <p>I spend a lot of time training and racing bikes, and I’ve completed the Leadville 100. Before cycling, I was president and captain of the Boston College men’s rowing team.</p>
-    <p>I care about the details, enjoy competing, and like having something difficult to work toward.</p>
-  </section>
-
-  <section class="home-section narrative reach-out">
-    <p>If you’re building a software company, working through commercialization, or thinking about defensibility and value creation, <a href="mailto:s@sdf.tech">I’d enjoy comparing notes</a>.</p>
+    <ul class="skim-list">
+      <li>Cycling, training, and racing. Leadville 100 finisher.</li>
+      <li>Former president and captain, Boston College men’s rowing.</li>
+    </ul>
   </section>
 </Layout>
