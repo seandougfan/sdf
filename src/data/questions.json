@@ -1,18 +1,22 @@
 [
   {
     "topic": "Data as float",
-    "question": "Can data serve as float to fund a permanent capital vehicle\u2014and what else could that vehicle build or own?"
+    "question": "Can a data business fund a permanent capital vehicle whose ambitions outlast the original business?"
   },
   {
-    "topic": "Robotics & real-world workflows",
-    "question": "Where do robotics, verifiable real-world outcomes, and workflows recorded in software intersect?"
+    "topic": "Learning from real-world work",
+    "question": "How do recorded workflows, verifiable outcomes, and proprietary data become training grounds for AI and robotics?"
   },
   {
-    "topic": "Capital allocation",
-    "question": "When should a software business reinvest, acquire, or return capital?"
+    "topic": "Who captures AI’s value?",
+    "question": "Does AI strengthen existing software businesses—or route around them? Where do customer value and durable profits accumulate?"
   },
   {
-    "topic": "Software defensibility",
-    "question": "What creates lasting equity value as the cost of building software falls?"
+    "topic": "Distribution when agents do the buying",
+    "question": "What happens to discovery, advertising, and competition when businesses sell to a customer’s agent?"
+  },
+  {
+    "topic": "Capital allocation & ownership",
+    "question": "How do cash flow, control, incentives, and capital structure give companies room to make ambitious bets?"
   }
 ]

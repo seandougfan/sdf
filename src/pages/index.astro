@@ -25,7 +25,7 @@ import questions from '../data/questions.json';
   <section id="questions" class="home-section narrative">
     <h2>Questions I keep coming back to</h2>
     <ul class="skim-list question-list">
-      {questions.map(({ topic, question }) => <li><strong>{topic}.</strong> {question}</li>)}
+      {questions.map(({ topic, question }) => <li><strong>{topic}{/[.!?]$/.test(topic) ? '' : '.'}</strong> {question}</li>)}
     </ul>
   </section>
 
