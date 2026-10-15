@@ -20,7 +20,7 @@ Confirm how Sean wants to describe parenthood and city/region. Optional small ca
 
 ## Links and context to confirm
 
-Public Twitter/X profile URL. Do not link the private/pseudonymous account without an explicit request to associate it publicly.
+Public Twitter/X profile: https://x.com/seandougfan.
 Merit URL and current role description.
 Racepace found at https://www.racepace.cc/; retain past-tense founder description as requested.
 
