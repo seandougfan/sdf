@@ -29,4 +29,4 @@ footer span{color:#7b9072}
 
 .skim-list{list-style-type:disc;padding-left:18px;margin:0;color:#596257;font-size:14px;line-height:1.75}.skim-list li{padding-left:3px;margin-bottom:11px}.skim-list li::marker{color:#8ea383;font-size:10px}.work-list li{margin-bottom:9px}.work-list a{font-weight:550}.question-list strong{font-weight:550;color:#35523b}.narrative .background-note{font-size:12px;line-height:1.75;color:#788670;margin:15px 0 0}.home-bio p:last-child{font-size:16px}.personal-section .skim-list li{margin-bottom:7px}
 
-.personal-home .opening{font-size:23px;line-height:1.65;letter-spacing:-.45px;color:#304c38;max-width:570px;margin:0}.personal-home+.home-section{margin-top:42px}@media(max-width:540px){.personal-home .opening{font-size:21px;line-height:1.6}}
+.personal-home .opening{font-size:16px;line-height:1.85;letter-spacing:-.15px;color:#596257;max-width:570px;margin:0}.personal-home+.home-section{margin-top:42px}@media(max-width:540px){.personal-home .opening{font-size:16px;line-height:1.85}}
