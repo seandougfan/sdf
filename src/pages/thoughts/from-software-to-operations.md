@@ -3,9 +3,9 @@ layout: ../../layouts/Post.astro
 title: From software to the operations it serves
 date: '2026-10-15'
 status: Working note
-description: Exploring a path from vertical software to AI-enabled workflows and operating-company ownership.
+description: Exploring a path from software to AI-enabled workflows and operating-company ownership.
 ---
-One path I’m exploring starts with an established vertical software business, moves into AI-enabled workflows, and could eventually extend to owning the operating businesses that use it.
+One path I’m exploring starts with an established software business, moves into AI-enabled workflows, and could eventually extend to owning the operating businesses that use it.
 
 Each step changes the work and the economics:
 
